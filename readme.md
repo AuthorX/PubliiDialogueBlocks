@@ -42,7 +42,7 @@ In addition, **this plugin requires the setting "Display Authors w/o Posts" to b
 
 ### Installing
 
-1. Download the zip file of the latest release
+1. Download the zip file of the [latest release](https://github.com/AuthorX/PubliiDialogueBlocks/releases)
 2. Open Publii (if necessary, create or open a site)
 3. Click the three-dot menu icon at the top-right of Publii, and select "Plugins"
 4. Either click the "Install plugin" button at the top-right and find the zip, or simply drag the zip file onto the plugins window
