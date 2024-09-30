@@ -1,0 +1,58 @@
+.visualnovel {
+    --border-radius: 20px;
+    padding: 10px;
+    color: #303030;
+    padding: 10px 10px 10px 10px;
+}
+.visualnovel .align-right {
+    margin-left: auto;
+}
+.visualnovel p {
+    margin-top: 0;
+}
+.visualnovel .dialogueBlock {
+    position:relative;
+}
+.visualnovel .dialogueBlock>:not(.characterLine) {
+    background-color: var(--dialogue-background-color);
+    color: var(--dialogue-text-color);
+    border-style: solid;
+    border-color: var(--border-color);
+    border-width: medium;
+    border-collapse: collapse;
+    padding-left: var(--border-radius);
+    padding-right: var(--border-radius);
+}
+.visualnovel .dialogueBlock>:not(.characterLine)+:not(.characterLine) {
+    border-top-width: 0;
+}
+.visualnovel .dialogueBlock>:last-child {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.visualnovel .characterLine {
+    background-color: var(--dialogue-background-color);
+    display:flex;
+    align-items: end;
+    border-color: var(--border-color);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    border-style: solid solid none solid;
+    width: fit-content;
+    overflow: hidden;
+}
+.visualnovel .characterAvatar{
+    width:60px;
+    height:60px;
+    /* border-top-left-radius: var(--border-radius);
+    /* position: absolute;
+    top: -60px; */
+}
+.visualnovel .characterPortrait{
+    max-height: var(--portrait-max-height);
+}
+.visualnovel .characterName{
+    margin: 5px;
+    /* position:absolute;
+    top: -1.5em;
+    left: 65px;
+     */
+}

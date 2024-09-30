@@ -1,0 +1,161 @@
+{
+    "name": "Dialogue Blocks",
+    "description": "This plugin provides dialogue or chatroom styling for post content",
+    "license": "GPL-3.0",
+    "author": "Dana Callista Lexa",
+    "version": "0.5.1",
+    "scope": "site",
+    "minimumPubliiVersion": "0.46.0",
+    "requiredFeatures": [
+        "authorImages"
+    ],
+    "assets": {
+        "front": [
+            "guildchat.css",
+            "visualnovel.css",
+            "userunknown.png"
+        ]
+    },
+    "messageInOptions": {
+        "type": "warning",
+        "text": "Warning: For this plugin to work, you must go to your site settings -> SEO -> Authors and turn on \"Display Authors w/o Posts\""
+    },
+    "config": [
+        {
+            "name": "iconAttribution",
+            "type": "separator",
+            "note": "Icon by Rudy Muhardika: https://www.svgrepo.com/svg/429742/chat-profile-profiles"
+        },
+        {
+            "name": "defaultTheme",
+            "label": "Default Theme",
+            "value": "guildchat",
+            "note": "This theme will be applied to all posts and can be overridden with \"{{theme: themename}}\"",
+            "group": "General",
+            "type": "select",
+            "options": [
+                {
+                    "label": "none",
+                    "value": "",
+                    "disabled": false
+                },
+                {
+                    "label": "guildchat",
+                    "value": "guildchat",
+                    "disabled": false
+                },
+                {
+                    "label": "visualnovel",
+                    "value": "visualnovel",
+                    "disabled": false
+                }
+            ]
+        },
+        {
+            "name": "gcBackgroundColor",
+            "label": "Chat Background Color",
+            "value": "#313338",
+            "note": "Default: #313338",
+            "group": "Guild Chat Style",
+            "type": "colorpicker"
+        },
+        {
+            "name": "gcDialogueColor",
+            "label": "Chat Dialogue Color",
+            "value": "#f2f3f5",
+            "note": "Default: #f2f3f5",
+            "group": "Guild Chat Style",
+            "type": "colorpicker"
+        },
+        {
+            "name": "gcTextColor",
+            "label": "Chat Non-Dialogue Text Color",
+            "value": "#959ba4",
+            "note": "Default: #959ba4",
+            "group": "Guild Chat Style",
+            "type": "colorpicker"
+        },
+        {
+            "name": "vnBorderColor",
+            "label": "VN Dialogue Border Color",
+            "value": "#d3d3d3",
+            "note": "Default: #d3d3d3",
+            "group": "Visual Novel Style",
+            "type": "colorpicker"
+        },
+        {
+            "name": "vnBackgroundColor",
+            "label": "VN Dialogue Background Color",
+            "value": "#f2f2f2",
+            "note": "Default: #f2f2f2",
+            "group": "Visual Novel Style",
+            "type": "colorpicker"
+        },
+        {
+            "name": "vnDialogueColor",
+            "label": "Chat Dialogue Color",
+            "value": "#303030",
+            "note": "Default: #303030",
+            "group": "Visual Novel Style",
+            "type": "colorpicker"
+        },
+        {
+            "name": "vnPortraitHeight",
+            "label": "VN Portrait Height",
+            "value": "400px",
+            "note": "Default: 400px, requires \"VN Portraits\" to be set to \"Featured Image\"",
+            "group": "Visual Novel Style",
+            "type": "text"
+        },
+        {
+            "name": "vnNames",
+            "label": "VN Names",
+            "note": "Use the basic name (author Name field), the styled description, or the plaintext description for character names in visualnovel style?",
+            "value": "styled",
+            "group": "Visual Novel Style",
+            "type": "radio",
+            "options": [
+                {
+                    "label": "Basic",
+                    "value": "basic",
+                    "disabled": false
+                },
+                {
+                    "label": "Styled",
+                    "value": "styled",
+                    "disabled": false
+                },
+                {
+                    "label": "Plain Text",
+                    "value": "plaintext",
+                    "disabled": false
+                }
+            ]
+        },
+        {
+            "name": "vnPortraits",
+            "label": "VN Portraits",
+            "note": "Use author Avatar, Featured Image, or no images for visualnovel style?",
+            "value": "avatar",
+            "group": "Visual Novel Style",
+            "type": "radio",
+            "options": [
+                {
+                    "label": "None",
+                    "value": "none",
+                    "disabled": false
+                },
+                {
+                    "label": "Avatar",
+                    "value": "avatar",
+                    "disabled": false
+                },
+                {
+                    "label": "Featured Image",
+                    "value": "featuredImage",
+                    "disabled": false
+                }
+            ]
+        }
+    ]
+}

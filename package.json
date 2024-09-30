@@ -1,0 +1,21 @@
+{
+  "name": "dialogueblocks",
+  "version": "0.5.1",
+  "description": "This Publii plugin provides dialogue or chatroom styling for post content",
+  "main": "main.js",
+  "scripts": {
+    "pack": "npm-pack-zip",
+    "postpack": "tar -xzf %npm_package_name%-%npm_package_version%.tgz && move package dialogueBlocks && tar -caf %npm_package_name%-%npm_package_version%.zip dialogueBlocks && rmdir /s /q dialogueBlocks"
+  },
+  "author": "Dana Callista Lexa",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  },
+  "bundleDependencies": [
+    "node-html-parser"
+  ],
+  "devDependencies": {
+    "npm-pack-zip": "^1.3.0"
+  }
+}

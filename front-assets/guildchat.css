@@ -1,0 +1,28 @@
+.guildchat {
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--dialogue-color);
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-radius: 1em;
+}
+.guildchat >p {
+    color:var(--text-color);
+}
+.guildchat .dialogueBlock {
+    position:relative;
+    margin-left: 50px;
+}
+.guildchat p {
+    margin-top: 0;
+}
+.guildchat .characterLine {
+    display:flex;
+}
+.guildchat .characterAvatar{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    position:absolute;
+    left: -50px;
+}

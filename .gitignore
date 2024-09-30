@@ -1,0 +1,4 @@
+*.tgz
+*.zip
+.npm
+node_modules/

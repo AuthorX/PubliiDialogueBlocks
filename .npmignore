@@ -1,0 +1,6 @@
+*.zip
+*.tgz
+.gitignore
+.npmignore
+dialoguesample.png
+readme.md
